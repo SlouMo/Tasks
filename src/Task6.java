@@ -7,12 +7,11 @@ public class Task6 {
         Scanner scan = new Scanner(System.in);
         int members = scan.nextInt();
         double sum = 0;
-        for (int i=0;i<members;i++) {
-            if ((i+1)%2==1) {
-                sum+= (double) 1/Math.pow((i*2+1),2);
-            }
-            else {
-                sum-= (double) 1/Math.pow((i*2+1),2);
+        for (int i = 0; i < members; i++) {
+            if ((i + 1) % 2 == 1) {
+                sum += (double) 1 / Math.pow((i * 2 + 1), 2);
+            } else {
+                sum -= (double) 1 / Math.pow((i * 2 + 1), 2);
             }
         }
         System.out.println("The sum is equal to: " + sum);

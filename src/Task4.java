@@ -6,9 +6,9 @@ public class Task4 {
         System.out.print("Answer: ");
         Scanner scan = new Scanner(System.in);
         int multiplyUpTo = scan.nextInt();
-        for (int i = 0; i < multiplyUpTo; i++) {
-            for (int n = 0; n < multiplyUpTo;n++) {
-                System.out.print((n+1)*(i+1) + " ");
+        for (int i = 1; i <= multiplyUpTo; i++) {
+            for (int n = 1; n <= multiplyUpTo; n++) {
+                System.out.print(n * i + " ");
             }
             System.out.println();
         }

@@ -11,26 +11,26 @@ public class Task3 {
         int triangleShape = scan.nextInt();
         switch (triangleShape) {
             case 1:
-                for(int i=0;i<sideTriangle;i++){
-                    for(int n = i+1;n>0;n--){
+                for (int i = 0; i < sideTriangle; i++) {
+                    for (int n = i + 1; n > 0; n--) {
                         System.out.print("*");
                     }
                     System.out.println();
                 }
                 break;
             case 2:
-                for(int i=0;i<sideTriangle;i++){
-                    int n = i+1;
-                    int centre = (sideTriangle-n)/2;
-                    for (int m =0; m < centre;m++) {
+                for (int i = 0; i < sideTriangle; i++) {
+                    int n = i + 1;
+                    int centre = (sideTriangle - n) / 2;
+                    for (int m = 0; m < centre; m++) {
                         System.out.print(" ");
                     }
-                    if (n%2 == 1) {
-                    for(;n>0;n--){
-                        System.out.print("*");
+                    if (n % 2 == 1) {
+                        for (; n > 0; n--) {
+                            System.out.print("*");
                         }
                     }
-                        System.out.println();
+                    System.out.println();
                 }
                 break;
             default:
