@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /*
@@ -11,9 +10,9 @@ public class Castling {
         System.out.print("Here please: ");
         int valueOne = readInput.nextInt();
         int valueTwo = readInput.nextInt();
-        valueOne+=valueTwo;
-        valueTwo= valueOne-valueTwo;
-        valueOne-=valueTwo;
+        valueOne += valueTwo;
+        valueTwo = valueOne - valueTwo;
+        valueOne -= valueTwo;
         System.out.println("We reversed the value.");
         System.out.println("This is the first " + valueOne + ", and this is the second " + valueTwo);
     }
