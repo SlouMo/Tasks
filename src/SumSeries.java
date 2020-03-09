@@ -9,6 +9,7 @@ public class SumSeries {
 
         double resultExpression = 0;
         double resultSeries = 1;
+        double valueFactorial;
         System.out.println("To which row will we consider?");
         System.out.print("Answer: ");
         Scanner readAnsw = new Scanner(System.in);
@@ -16,7 +17,8 @@ public class SumSeries {
         if (series > 0) {
             for (int m = 1; m <= series; m++) {
                 for (int i = 1; i <= m; i++) {
-                    resultSeries = (factorialCalc(i - 1) * factorialCalc(i - 1)) / (factorialCalc(2 * i));
+                    valueFactorial= factorialCalc(i - 1);
+                    resultSeries = (valueFactorial*valueFactorial) / (factorialCalc(2 * i));
                 }
                 resultExpression += resultSeries;
             }
