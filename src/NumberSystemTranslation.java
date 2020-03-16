@@ -8,13 +8,14 @@ public class NumberSystemTranslation {
         Scanner readAnsw = new Scanner(System.in);
         int userNumber = readAnsw.nextInt();
         long valueBinary = Long.parseLong(Long.toBinaryString(userNumber));
+        long userNumberBinary = valueBinary;
         while (valueBinary > 0) {
             if (valueBinary % 10 == 1) {
                 countUnit++;
             }
             valueBinary /= 10;
         }
-        System.out.println("Your binary number looks like this: " + Long.parseLong(Long.toBinaryString(userNumber)));
+        System.out.println("Your binary number looks like this: " + userNumberBinary);
         System.out.println("The number of units in your number: " + countUnit);
     }
 }
