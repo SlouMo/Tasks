@@ -14,16 +14,15 @@ public class BubbleSort {
         String bubbleSortString = Arrays.toString(bubbleSort);
         System.out.println("Array before sorting");
         System.out.println(bubbleSortString);
-        int arrayLengthCount = arrayLength;
+        int tmp;
         for (int n = 0; n < arrayLength; n++) {
-            for (int m = 0; m < arrayLengthCount - 1; m++) {
+            for (int m = 0; m < arrayLength - n - 1; m++) {
                 if (bubbleSort[m] > bubbleSort[m + 1]) {
-                    bubbleSort[m + 1] += bubbleSort[m];
-                    bubbleSort[m] = bubbleSort[m + 1] - bubbleSort[m];
-                    bubbleSort[m + 1] -= bubbleSort[m];
+                    tmp = bubbleSort[m + 1];
+                    bubbleSort[m + 1] = bubbleSort[m];
+                    bubbleSort[m] = tmp;
                 }
             }
-            arrayLengthCount--;
         }
         bubbleSortString = Arrays.toString(bubbleSort);
         System.out.println("Array after sorting");
